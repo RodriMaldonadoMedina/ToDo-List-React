@@ -1,15 +1,13 @@
 import React from "react";
 
-const Tarea = ({index, nombre, clase, eliminarTarea}) => {
-
-    const eliminarTareaPorIndice = (index)=>{
-        eliminarTarea((prevState)=>prevState.filter((elemento, indice)=>{indice !== index}))
-    }
+const Tarea = ({indice, nombre, clase, eliminarTarea}) => {
 
     return (
-        <div className="d-flex justify-content-between">
-            <li className={clase}>{nombre}</li>
-            <span><i class="bi bi-trash" onClick={eliminarTareaPorIndice(index)}></i></span>
+        <div>
+            <li className={clase} key={indice} id={indice}>
+                <span>{nombre}</span>
+                <span className="justify-content-between"><i className="bi bi-trash miTrash" onClick={eliminarTarea}></i></span>
+            </li>
         </div>
     )
 }

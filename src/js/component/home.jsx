@@ -5,8 +5,8 @@ import Tareas from "./Tareas.jsx"
 //create your first component
 const Home = () => {
 	return (
-		<div className="container">
-			<h1 className="text-center">ToDos</h1>
+		<div className="misNotas">
+			<h1 className="text-center text-danger">ToDo List in React</h1>
 			<Tareas />
 		</div>
 	);

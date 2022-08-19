@@ -1,5 +1,25 @@
-.miTarea{
-    list-style: none;
+body{
+    background-image: url("https://imag.malavida.com/articulos/post-it-digitales-20160226-pca.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.misNotas{
+    margin: auto;
+    width: 600px;
+    height: 500px;
+}
+
+.miInput{
     margin: 0;
-    padding: 0;
+    color: lightblue;
+}
+
+.misTareas{
+    width: 100%;
+}
+
+.miTrash:hover{
+    cursor: pointer;
 }
